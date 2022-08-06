@@ -1,0 +1,203 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>How to 3D Testimonial Carousel using Materialize CSS</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">    
+    <style>
+        body {
+	margin: 0;
+	padding: 0;
+	background: #0a69ed; 
+}
+.carousel{
+    height: 600px; 
+    perspective: 250px;    
+    
+}
+.carousel .carousel-item {
+	width: 450px;
+	background: #fff;
+	padding: 50px;
+	height: auto;
+	text-align: center;
+    border-radius: 15px;
+}
+.img-area {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 50%;
+	border: inset 8px deepskyblue;
+}
+        .img-area img{
+            width: 100%;
+        }
+        .testi p {
+	color: #262626;
+	font-size: 18px;
+	line-height: 1.9;
+}
+        .testi h4 {
+	font-size: 20px;
+	margin: 0;
+	color: #000;
+}
+        .testi h5 {
+	font-size: 14px;
+	letter-spacing: 5px;
+	margin: 7px 0;
+}
+
+    </style>
+</head>
+<body>
+    
+    
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="Media/profile1.jpg">
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis repellendus delectus, est, alias recusandae."</p>
+                <h4>Jessica Jones</h4>
+                <h5>Web Designer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="Media/profile1.jpg">
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis repellendus delectus, est, alias recusandae."</p>
+                <h4>Jessica Jones</h4>
+                <h5>Web Designer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="Media/profile1.jpg">
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis repellendus delectus, est, alias recusandae."</p>
+                <h4>Jessica Jones</h4>
+                <h5>Web Designer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="Media/profile1.jpg">
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis repellendus delectus, est, alias recusandae."</p>
+                <h4>Jessica Jones</h4>
+                <h5>Web Designer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="Media/profile1.jpg">
+                </div>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus veritatis repellendus delectus, est, alias recusandae."</p>
+                <h4>Jessica Jones</h4>
+                <h5>Web Designer</h5>
+            </div>
+        </a>
+      
+   </div>
+
+    
+    
+    
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+			padding: 200
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000;
+}
+.loader .btn
+{
+	position: relative;
+	width: 300px;
+	height: 100px;
+	background: #fff;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+.loader .btn::before 
+{
+	content: '';
+	position: absolute;
+	
+	background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094);
+	animation: animate 20s linear infinite;
+	background-size: 500%;
+}
+.loader .btn::after 
+{
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094);
+	animation: animate 20s linear infinite;
+	background-size: 500%;
+	filter: blur(20px);
+}
+@keyframes animate 
+{
+	0% 
+	{
+		background-position: 0 0;
+	}
+	0% 
+	{
+		background-position: 500% 0;
+	}
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="loader">
+        <button type="submit" class="btn">Button</button>
+    </div>
+</body>
+</html>

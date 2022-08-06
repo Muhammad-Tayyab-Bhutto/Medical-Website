@@ -1,0 +1,156 @@
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        padding: 0;
+        margin: 0;
+    }
+    .logo{
+        width: 220px;
+    }
+    .console-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .header-text{
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    .header-text h1{ 
+        padding: 100%;
+        font-size: 20px;
+    }
+    .header-text p{
+        /* padding: auto; */
+        font-size: 1.25rem;
+        margin-left: 10px;
+        margin-top: -700px;
+    }
+    .header-text p span{
+        /* padding: auto; */
+        font-size: 20px;
+        margin-left: 10px;
+        margin-top: -700px;
+        font-size: 2rem;
+        background: linear-gradient(45deg, #db469f, #2188ff);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    #header .btn{
+        padding: 10px 8px;
+        margin: 50px auto;
+    }
+    #header .VideoHero_video__Ov6a5{
+        padding: auto;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    
+    nav ul{
+        background: rgb(9, 189, 235);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 2rem;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    #disease{
+        margin-top: -30px;
+    }
+    #disease h1{
+        font-size: 30px;
+        padding: 0;
+    }
+    #healthcare{
+        text-align: center;
+        font-size: 30px;
+    }
+    #healthcare .about-col-1{
+        margin-bottom: -200px;
+    }
+    #healthcare .container .row .about-col-2 h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    #healthcare .btn{
+        margin: 50px auto;
+    }
+    #medical{
+        margin-top: 20px;
+        text-align: center;
+    }
+    #medical h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    #about{
+        margin-top: 20px;
+        padding: 0;
+        align-content: center;
+        text-align: center;
+    }
+    #about h1{
+        font-size: 2rem;
+    }
+    #review{
+        margin-top: 20px;
+    }
+    #review h1{
+        font-size: 2rem;
+    }
+    .shortLinks{
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 1045px) {
+    .wrapper .box{
+      width: calc(50% - 10px);
+      margin: 10px 0;
+    }
+  }
+  @media (max-width: 702px) {
+    .wrapper .box{
+      width: 100%;
+    }
+  }
+  
