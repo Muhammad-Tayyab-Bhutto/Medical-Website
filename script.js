@@ -1,3 +1,10 @@
+var sidemenu = document.getElementById("sidemenu");
+function openMenue(){
+    sidemenu.style.right = "0";
+}
+function closeMenue(){
+    sidemenu.style.right = "-200px";
+}
 
 // function([string1, string2],target id,[color1,color2])    
 consoleText(['ApnaMD'], 'text',['Clinically Tested AI Diagnostic']);
@@ -50,29 +57,8 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
-
-var c = $("canvas")[0];
-var w = c.width;
-var h = c.height;
-var img = $("img")[0];
-setTimeout(function () {
-    c.getContext('2d').drawImage(img, 0, 0, w, h);
-    $(img).hide();
-    $(c).show();
-},10000);
 
 
-let sidemenu = document.getElementById("sidemenu");
-function openMenu(){
-    sidemenu.style.right = "0";
-}
-function closeMenu(){
-    sidemenu.style.right = "-200px";
-}
- 
+
+
 

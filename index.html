@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="app.js"> -->
   <script src="https://kit.fontawesome.com/049085f069.js" crossorigin="anonymous"></script>
-
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsiveness.css">
-  
 
   <title>Document</title>
 </head>
@@ -19,22 +19,24 @@
   <div id="header">
     <div class="container">
       <nav>
-        <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#124;</div></div>
+        <div class='console-container'><span id='text'></span>
+          <div class='console-underscore' id='console'>&#124;</div>
+        </div>
 
         <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#disease">Symptom Check</a></li>
           <li><a href="#about">About Us</a></li>
-          <i class="fas fa-times" onclick="closeMenu()"></i>
+          <i class="fas fa-times" onclick="closeMenue()"></i>
         </ul>
-        <i class="fas fa-bars" onclick="openMenu()"></i>
+        <i class="fas fa-bars" onclick="openMenue()"></i>
       </nav>
     </div>
     <div class="header-text">
-      <video  autoplay muted width="1920" height="1080" autoplay="" preload="auto" class="VideoHero_video__Ov6a5" controls>
+      <video autoplay muted width="1920" height="1080" autoplay="" preload="auto" class="VideoHero_video__Ov6a5"
+        controls>
         <source src="Media/background2_AdobeExpress.mp4" type="video/mp4">
       </video>
-      <!-- <video width="1920" height="1080" autoplay="" preload="auto" class="VideoHero_video__Ov6a5"><source src="https://d28prrnvtxqzuk.cloudfront.net/home-page-hero-v2.webm" type="video/webm"><source src="https://d28prrnvtxqzuk.cloudfront.net/home-page-hero-v2.mp4" type="video/mp4"></video> -->
       <h1>Medical Advice Anytime.<br><span>AI guided and Clinically Based.</span><br /> Honest and Free.</h1>
       <p>Medical Advice Anytime.<br><span>AI guided and Clinically Based.</span><br /> Honest and Free.</p>
     </div>
@@ -45,22 +47,21 @@
     <div class="container">
       <h1 class="sub-title">Click on your disease symptom to diagnose your medical problem</h1>
     </div>
-    <div class="images-grid">
-      <a href="#"><img src="Media/cough.png"></a>
-      <a href="#"><img src="Media/abdominalpain.png"></a>
-      <a href="#"><img src="Media/fever.png"></a>
-      <a href="#"><img src="Media/chestpain.png"></a>
-      <a href="#"><img src="Media/skindisease.png"></a>
-      <a href="#"><img src="Media/diet.png"></a>
-      <a href="#"><img src="Media/bloodtest.png"></a>
-      <a href="#"><img src="Media/xray.png"></a>
-      <a href="#"><img src="Media/DEPRESSION.png"></li>
-        <a href="#"><img src="Media/DIABETES.png"></li>
-          <a href="#"><img src="Media/DIABETES_COMPLICATIONS.png"></a>
-          <a href="#"><img src="Media/CVD_RISK.png"></a>
-          <a href="#"><img src="Media/Pregnancy.png"></a>
-
-    </div>
+  </div>
+  <div class="disease">
+    <div class="item"><a href=""><i class="fa-solid fa-head-side-cough"><br />COUGH</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-user-doctor"><br />ABDOMINAL PAIN</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-temperature-full"><br />FEVER</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-spray-can"><br />CHEST PAIN</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-person-rays"><br />SKIN DISEASE</i></a></div>
+    <div class="item"><a href="app.js"><i class="fa-solid fa-person-walking"><br />DIET</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-hand-dots"><br />BLOOD TEST</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-x-ray"><br />X-RAY</i></a></div>
+    <div class="item"><a href=""><i class="fa-regular fa-person-praying"><br />DEPRESSION</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-hospital-user"><br />DIABETES CHECK</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-stomach"><br />DIABETES COMPLICATIONS</i></a></div>
+    <div class="item"><a href=""><i class="fa-duotone fa-stomach"><br />PREGNANCY</i></a></div>
+    <div class="item"><a href=""><i class="fa-solid fa-face-anxious-sweat"><br />ANXIETY</i></a></div>
   </div>
 
   <!-- ----------------------------------------------Messages------------------------------------------ -->
@@ -68,13 +69,15 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1" style="padding-top: 350px;">
-          <video  autoplay muted width="1920" height="1080" autoplay="" preload="auto" class="VideoHero_video__Ov6a5" controls autoplay loop>
+          <video autoplay muted width="1920" height="1080" autoplay="" preload="auto" class="VideoHero_video__Ov6a5"
+            controls autoplay loop>
             <source src="Media/middle.mp4" type="video/mp4">
           </video>
         </div>
         <div class="about-col-2">
-          <h1 class="sub-title">We're working with partners<br/> across the world</h1>
-          <p>We're teaming up with impactful partners large and small to transform the healthcare system. Today, we cover over 3.5 million Americans with our clinical services.</p>
+          <h1 class="sub-title">We're working with partners<br /> across the world</h1>
+          <p>We're teaming up with impactful partners large and small to transform the healthcare system. Today, we
+            cover over 3.5 million Americans with our clinical services.</p>
           <p style="padding-top: 20px">And we're just getting started.</p>
           <a href="#" class="btn">Our Mission</a>
         </div>
@@ -121,14 +124,17 @@
     </div>
   </div>
 
-  
-  <!-- ----------------------------------------------People WHo Loves----------------------------------------- -->
+  <!-- --------------------------------------Review and Parteners------------------------------------ -->
   <div id="review">
     <div class="container">
       <h1>Our Partners include</h1>
       <div class="images-grid">
-        <li><a href="#"><img src="Media/bnp-paribas.svg"><h6>BNP PARIBAS</h6></a></li>
-        <li><a href="#"><img src="Media/hsbc-logo.svg"><h6>HSBS</h6></a></li>
+        <li><a href="#"><img src="Media/bnp-paribas.svg">
+            <h6>BNP PARIBAS</h6>
+          </a></li>
+        <li><a href="#"><img src="Media/hsbc-logo.svg">
+            <h6>HSBS</h6>
+          </a></li>
         <li><a href="#"><img src="Media/shell.svg"></a></li>
         <li><a href="#"><img src="Media/buzzfeed.svg"></a></li>
         <li><a href="#"><img src="Media/nhs.svg"></a></li>
@@ -136,90 +142,171 @@
 
       </div>
       <h1>What our members say about us</h1>
-      <div class="wrapper">
-        <div class="box">
-          <i class="fas fa-quote-left quote"></i>
-          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-          <div class="content">
-            <div class="info">
-              <div class="name">Muhammad Tayyab B</div>
-              <div class="job">Designer | Developer</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-            <div class="image">
-              <img src="Media/user1.png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-quote-left quote"></i>
-          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-          <div class="content">
-            <div class="info">
-              <div class="name">Steven Chris</div>
-              <div class="job">YouTuber | Blogger</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-            <div class="image">
-              <img src="Media/profile2.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-quote-left  quote"></i>
-          <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
-          <div class="content">
-            <div class="info">
-              <div class="name">Kristina Bellis</div>
-              <div class="job">Freelancer | Advertiser</div>
-              <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half"></i>
-              </div>
-            </div>
-            <div class="image">
-              <img src="Media/profile3.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        
-        
-      </div>
     </div>
   </div>
- 
+  </div>
+
+  <!-- ----------------------------------------------People WHo Loves----------------------------------------- -->
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <p>"I am so Happy to have Apna MD in corner."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <p>"Utilizing Apna MD has been one of the best experience I've had with the medical field hand down form the
+          ease with which I can made an appointment in a timely manner to follow-ups."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="swiper-slide">S
+        <p>"Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat
+          thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <p>"The best doctors visit I've even had. Wish I could use this doctor and app rest of my life."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <p>"Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat
+          thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <p>"Apna Md provider was amazing! she was so helpful and explained every thing and made sure I was taking care
+          of."</p>
+        <div class="stars" style="text-align:center; ">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <!-- --------------------------------------------mobile view------------------------------------------------- -->
+  <div class="wrapper">
+
+    <div class="box">
+      <p>"I am so Happy to have Apna MD in corner."</p>
+      <div class="stars" style="text-align:center; ">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+
+
+    <div class="box">
+      <p>"Utilizing Apna MD has been one of the best experience I've had with the medical field hand down form the ease
+        with which I can made an appointment in a timely manner to follow-ups."</p>
+      <div class="stars" style="text-align:center; ">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+
+    <div class="box">
+      <p>"The best doctors visit I've even had. Wish I could use this doctor and app rest of my life."</p>
+      <div class="stars" style="text-align:center; ">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+
+
+  </div>
   <!-- ----------------------------------------Footer--------------------------------------------------- -->
   <div class="footer">
     <div class="shortLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Terms Of Use</a></li>
-      <li><a href="#">Sitemap</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <a href="#">
+        <li>Home</li>
+      </a>
+      <a href="#">
+        <li>About Us</li>
+      </a>
+      <a href="#">
+        <li>Terms Of Use</li>
+      </a>
+      <a href="#">
+        <li>Sitemap</li>
+      </a>
+      <a href="#">
+        <li>Privacy Policy</li>
+      </a>
     </div>
     <div class="copyright">
-      <p>Copyright  <i class="fa-solid fa-copyright"></i> Apna MD. Made With <i class="fa-solid fa-heart"></i></p>
+      <p>Copyright <i class="fa-solid fa-copyright"></i> Apna MD. Made With <i class="fa-solid fa-heart"></i></p>
+    </div>
   </div>
-  </div>
-  
-  
 
   <script src="script.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 200,
+      centerSlide: true,
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

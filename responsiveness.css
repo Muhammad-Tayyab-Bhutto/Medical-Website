@@ -1,34 +1,42 @@
-nav .fas{
+nav .fas {
     display: none;
 }
-@media only screen and (max-width: 600px){
-    #header{
+
+@media only screen and (max-width: 600px) {
+    #header {
         padding: 0;
         margin: 0;
     }
-    .logo{
+
+    .logo {
         width: 220px;
     }
+
     .console-container {
         display: flex;
         flex-wrap: wrap;
     }
-    .header-text{
+
+    .header-text {
         font-size: 15px;
-        display: block;
         text-align: center;
     }
-    .header-text h1{ 
-        padding: 100%;
-        font-size: 20px;
+
+    .header-text h1 {
+        margin-top: -20px;
+        display: block;
+        visibility: hidden;
     }
-    .header-text p{
+
+    .header-text p {
         /* padding: auto; */
+        visibility: visible;
         font-size: 1.25rem;
         margin-left: 10px;
         margin-top: -700px;
     }
-    .header-text p span{
+
+    .header-text p span {
         /* padding: auto; */
         font-size: 20px;
         margin-left: 10px;
@@ -38,11 +46,13 @@ nav .fas{
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
     }
-    #header .btn{
+
+    #header .btn {
         padding: 10px 8px;
         margin: 50px auto;
     }
-    #header .VideoHero_video__Ov6a5{
+
+    #header .VideoHero_video__Ov6a5 {
         padding: auto;
         margin: auto;
         top: 0;
@@ -50,13 +60,13 @@ nav .fas{
         bottom: 0;
         left: 0;
     }
+
     nav .fas{
         display: block;
         font-size: 25px;
     }
-    
     nav ul{
-        background: rgb(9, 189, 235);
+        background: linear-gradient(45deg, #db469f, #2188ff);
         position: fixed;
         top: 0;
         right: -200px;
@@ -76,81 +86,114 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
-    .sub-title{
+
+    .sub-title {
         font-size: 2rem;
     }
-    .about-col-1, .about-col-2{
+
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
-    #disease{
+
+    #disease {
         margin-top: -30px;
     }
-    #disease h1{
+
+    #disease h1 {
         font-size: 30px;
         padding: 0;
     }
-    #healthcare{
+    .disease{
+        padding: 10px;
+        letter-spacing: 4px;
+    }
+    .disease .item{
+        margin-right: 40px;
+        font-size: 15px;
+    }
+    #healthcare {
         text-align: center;
         font-size: 30px;
     }
-    #healthcare .about-col-1{
+
+    #healthcare .about-col-1 {
         margin-bottom: -200px;
     }
-    #healthcare .container .row .about-col-2 h1{
+
+    #healthcare .container .row .about-col-2 h1 {
         font-size: 30px;
         margin-bottom: 30px;
     }
-    #healthcare .btn{
+
+    #healthcare .btn {
         margin: 50px auto;
     }
-    #medical{
+
+    #medical {
         margin-top: 20px;
         text-align: center;
     }
-    #medical h1{
+
+    #medical h1 {
         font-size: 2rem;
         margin-bottom: 10px;
     }
-    
-    #about{
+
+    #about {
         margin-top: 20px;
         padding: 0;
         align-content: center;
         text-align: center;
     }
-    #about h1{
+
+    #about h1 {
         font-size: 2rem;
     }
-    #review{
+
+    #review {
         margin-top: 20px;
     }
-    #review h1{
+
+    #review h1 {
         font-size: 2rem;
     }
-    .shortLinks{
+
+    .shortLinks {
         display: inline-block;
         padding-bottom: 10px;
     }
+    .swiper.mySwiper{
+        display: none;
+    }
+    .wrapper{
+        display: block;
+        margin-bottom: 0px;
+    }
 }
+
 @media (max-width: 1045px) {
-    .wrapper .box{
-      width: calc(50% - 10px);
-      margin: 10px 0;
+    .wrapper .box {
+        width: calc(50% - 10px);
+        margin: 10px 0;
     }
-  }
-  @media (max-width: 702px) {
-    .wrapper .box{
-      width: 100%;
+}
+
+@media (max-width: 702px) {
+    .wrapper .box {
+        width: 100%;
     }
-  }
-  
+}
